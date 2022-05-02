@@ -12,7 +12,7 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
     <script src="ficherosJsfiddle.js"></script>
-    <title>Servidor</title>
+    <title>Cliente</title>
 </head>
 
 <body>
@@ -25,6 +25,8 @@
                 type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Formulario</button>
             <button class="nav-link menu" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"
                 type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Inputs</button>
+            <button class="nav-link menu" id="nav-dom-tab" data-bs-toggle="tab" data-bs-target="#nav-dom" 
+                type="button" role="tab" aria-controls="nav-dom" aria-selected="false">DOM</button>
         </div>
     </nav>
     <div class="tab-content" id="nav-tabContent">
@@ -37,7 +39,46 @@
         <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
             <script async src="//jsfiddle.net/katakuna/bpcwnx7h/92/embed/"></script>
         </div>
-    </div>
+        <div class="tab-pane fade margenDOM" id="nav-dom" role="tabpanel" aria-labelledby="nav-dom-tab" >
+            <h3>Que es el DOM?</h3>
+            <p>DOM o tambien conocido como Document Object Model es esencialmente un modelo computacional a través del cual los programas y scripts pueden acceder y modificar
+            dinámicamente el contenido, estructura y estilo de los documentos HTML y XML.</p>
+            <p>Dentro de DOM hay varios apartados entre ellos: DOM Style, DOM Element, DOM Document, DOM Events. 
+                <br>
+                Hoy vamos a explicar DOM Document.
+            </p>
+            <h4>DOM Document</h4>
+            <p> Cuando un documento HTML se carga en un navegador web, se convierte en un objeto de documento. Este objeto de documento es el nodo raiz del documento HTML y tambien es una propiedad del objeto de ventana. Para acceder a el se accede con "window.document" o con "document"</p>
+            <img src="media/img/Document.jpg" alt="DocumentDOM">
+            <h5>Funciones</h5>
+            <h6>Métodos de búsqueda</h6>
+            <ol>
+                <li> <b> getElementById</b>: Busca por id </li>
+                <li> <b> getElementsByName</b>: Busca por el name value </li>
+                <li> <b> getElementsByTagName</b>: Busca por el nombre del tag </li>
+                <li> <b> getElementsByClassName</b>: Busca por clase </li>
+                <li> <b> querySelector</b>: Busca por selector CSS </li>
+                <li> <b> querySelectorAll</b>: Busca todos los selectores CSS </li>
+            </ol>
+            <h6>Properties</h6>
+            <ol>
+                <li><b>attributes</b>: Nos devuelve todos los atributos que un elemento tenga, pudiendo cambiar cada uno de ellos.</li>
+                <li><b>className</b>: Devuelve el nombre de la clase del elemento seleccionado.</li>
+                <li><b>innerHTML</b>: Con innerHTML podemos ver y cambiar el contenido del texto del elemento.</li>
+                <li><b>outerHTML</b>: Nos devuelve no solo el texto si no los tags que lo envuelvan.</li>
+                <li><b>textContent</b>: Similar a innerHTML pero devuelve el contenido de texto del elemento seleccionado y sus descendientes.</li>
+                <li><b>style</b>: Nos devuelve el estilo del elemento y nos permite modificar el estilado del mismo.</li>
+            </ol>
+            <h6>Métodos de búsqueda</h6>
+            <ol>
+                <li> <b> onClick</b>: Cuando clickeamos el elemento</li>
+                <li> <b> resize</b>: BuCuando resizeamos la página </li>
+                <li> <b> onmouseover</b>: Cuando pasamos el puntero por encima del elemento </li>
+                <li> <b> onmouseout</b>: Cuando sacamos el puntero de encima </li>
+            </ol>
+            <input type="text" na>
+            <p id=""></p>
+        </div>
 </body>
 
 </html>
